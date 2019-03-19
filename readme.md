@@ -4,8 +4,13 @@
 
 ** This project is based on https://github.com/H4rryp0tt3r/Calculator by Nageswara Rao Podilapu **
 
-**This projects demonstrates how to integrate Plantuml with Gradle in order to integrate 
-technical diagrams produced with Plantuml in javadoc**
+This projects demonstrates how to integrate Plantuml with Gradle in order to integrate 
+technical diagrams produced with Plantuml in javadoc.
+
+**Attention!!**
+
+**See the section [PlantUML dependency on Graphviz](#requirements) of this file for how to install Grahviz, a tool required by 
+Plantuml that is not automatically installed!**
 
 ## Plantuml Diagrams
 
@@ -55,8 +60,10 @@ If you manually copy the image files from **build/puml** into **build/docs/javad
 (do not forget the subfolders) and refresh the browser you will see the diagrams. **How 
 could this task be automated with gradle?**
 
-## Attention: PlantUML dependency on Graphviz
+## <a name="requirements"></a>PlantUML dependency on Graphviz
 
 To properly work on all types of diagrams PlantUML depends on Graphviz. This is something that the gradle build does not solve automatically.
 
 Please refer to page [plantuml-graphviz-dot](http://plantuml.com/graphviz-dot) for further information on this issue and on instructions to install Graphviz on your system.
+
+You may also find instructions for installation in [Graphviz](https://graphviz.gitlab.io/download/)
